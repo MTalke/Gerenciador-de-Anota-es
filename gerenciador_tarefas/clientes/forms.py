@@ -1,7 +1,6 @@
 from django import forms
 from .models import Cliente,Endereco,Pedidos,Produto
 
-# Tabelas do banco de dados
 
 class ClienteForm(forms.ModelForm):
     class Meta:
@@ -17,9 +16,9 @@ class EnderecoForm(forms.ModelForm):
 class PedidoForm(forms.ModelForm):
     class Meta:
         # relacionamento 1 para N
-        cliente = forms.ModelChoiceField(queryset=Cliente.objects.all())
-        # relacionamento N para N
-        produtos = forms.ModelMultipleChoiceField(queryset= Produto.objects.all())
+        # cliente = forms.ModelChoiceField(queryset= Cliente.objects.all())
+        # # relacionamento N para N
+        # produtos = forms.ModelMultipleChoiceField(queryset = Produto.objects.all())
         model = Pedidos
         fields = ['cliente', 'observacoes','data_pedido','valor','status','produtos']
 
