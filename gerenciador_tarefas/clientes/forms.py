@@ -1,6 +1,7 @@
 from django import forms
 from .models import Cliente,Endereco,Pedidos,Produto
 
+# Tabelas do banco de dados
 
 class ClienteForm(forms.ModelForm):
     class Meta:
