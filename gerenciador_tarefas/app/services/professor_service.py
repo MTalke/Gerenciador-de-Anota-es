@@ -1,5 +1,7 @@
 from ..models import Professor
 
+# funções de professor
+
 def cadastrar_professor(professor):
 
     Professor.objects.create(
