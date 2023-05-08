@@ -1,1 +1,1 @@
-Gerenciador de Anotações
+Projeto Psic
